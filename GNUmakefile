@@ -13,7 +13,7 @@ override QEMU_MACHINE_FLAGS := \
 override QEMU_UEFI_FLAGS := \
     -drive if=pflash,unit=0,format=raw,file=edk2-ovmf-bins/ovmf-code-x86_64.fd,readonly=on
 
-override IMAGE_NAME := template
+override IMAGE_NAME := dk
 
 # User controllable size of the HDD image, in MiB.
 HDD_SIZE := 64
